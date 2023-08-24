@@ -10,8 +10,8 @@ auth_token  = os.environ['TWILIO_AUTH_TOKEN']
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-    to="+14167993015", 
-    from_="+12267814024",
-    body="'whitetiger' has signaled an overdose alert;\nCoordinates:")
+    to="+XXXXXXXXXXX", 
+    from_="+XXXXXXXXXX",
+    body="Overdose alert;\nCoordinates:")
 
 print(message.sid)
